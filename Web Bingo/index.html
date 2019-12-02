@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bingo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+    <link rel="shortcut icon" href="icono.png" type="image/x-icon">
+
+    <script>
+
+        function changeColor(x) {
+            if (x.style.color == "red") {
+                x.style.color = "black";
+
+            } else {
+                x.style.color = "red";
+            }
+            return false;
+        }
+
+    </script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="container-fluid">
+    <header class="row">
+
+        <a href="index.html"><img src="bingo_cabecera.png" class="m-2 ml-3" id="logo" alt="logo"></a>
+
+        <div class="main-container">
+            <div class="first-container share">
+                <h1 class="mb-3"><span id="one">¡Bi</span><span>en</span><span>ve</span><span>ni</span><span>do</span>
+                    <span>al</span>
+                    <span>B</span><span>I</span><span>N</span><span>G</span><span>O!</span>
+                </h1>
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav class="row navbar navbar-expand-lg navbar-light" style="padding-bottom: 0px">
+        <a class="navbar-brand" href="index.html"><img id="logo-menu" class="navbar-brand ml-3" src="bola.png"
+                alt="logo-bingo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon col-md-1"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ruleta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tragaperras</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Juegos de Cartas
+                    </a>
+                    <!-- Componente Dropdown -->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                            title="Desarrollo de Interfaces Web" href="#">Texas Holdem</a>
+                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                            title="Desarrollo Web Entorno Cliente" href="#">Omaha</a>
+                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                            title="Desarrollo Web Entorno Servidor" href="#">Poker Caribeño</a>
+                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                            title="Despliegue de Aplicaciones Web" href="#">Black Jack</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- Componente Form -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="¿Qué quieres buscar?"
+                    aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+    </nav>
+
+    <div class="row justify-content-center">
+        <nav class="col-6 col-lg-2 perfil">
+            <!--  Componente Card  -->
+            <div class="card mt-2">
+                <img src="yo.jpg" id="img-perfil" class="card-img-top">
+                <div class="card-body ">
+                    <p class="card-text text-center">Creditos: 150€</p>
+                    <center><a href="#" class="btn btn-primary">INGRESAR</a></center>
+                </div>
+            </div>
+        </nav>
+        <section class="col-xs-12 col-sm-12 col-md-12 col-lg-10 mb-5">
+            <div class="row">
+
+                <article class="col-12 col-sm-12 col-md-5 offset-md-1">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center mt-2">
+                            <h3>Carton 1</h3>
+                        </div>
+                        <div class="row bingo">
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">1</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">7</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">15</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">27</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">32</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                        </div>
+                        <div class="row bingo">
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">33</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">42</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">47</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">55</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activado d-flex justify-content-center"
+                                onclick="changeColor(this)">69</div>
+                        </div>
+                        <div class="row bingo">
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">70</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">79</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">83</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">86</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">92</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-sm-12 col-md-5">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center mt-2">
+                            <h3>Carton 2</h3>
+                        </div>
+                        <div class="row bingo">
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">3</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">14</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">16</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">29</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">31</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                        </div>
+                        <div class="row bingo">
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">39</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">40</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">45</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">51</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activado d-flex justify-content-center"
+                                onclick="changeColor(this)">60</div>
+                        </div>
+                        <div class="row bingo">
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">76</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">81</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">89</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">95</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">98</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12 col-sm-12 col-md-5 offset-md-1">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center mt-2">
+                            <h3>Carton 3</h3>
+                        </div>
+                        <div class="row bingo">
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">2</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">8</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">19</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">23</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">28</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                        </div>
+                        <div class="row bingo">
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">33</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">35</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">41</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">59</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activado d-flex justify-content-center"
+                                onclick="changeColor(this)">67</div>
+                        </div>
+                        <div class="row bingo">
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">73</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">79</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">80</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">85</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">90</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-sm-12 col-md-5">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center mt-2">
+                            <h3>Carton 4</h3>
+                        </div>
+                        <div class="row bingo">
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">4</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">9</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">11</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">20</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">30</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                        </div>
+                        <div class="row bingo">
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">38</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">49</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">52</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">58</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activado d-flex justify-content-center"
+                                onclick="changeColor(this)">71</div>
+                        </div>
+                        <div class="row bingo">
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">78</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">80</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">83</div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">91</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                            <div type="button" class="col-1 activo d-flex justify-content-center"
+                                onclick="changeColor(this)">99</div>
+                            <div type="button" class="col-1 desactivado d-flex justify-content-center"></div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- START Bootstrap-Cookie-Alert -->
+    <div class="alert alert-success text-center cookiealert cookiealert-" role="alert">
+        &#x1F36A; Esta página usa cookies para garantizar una mejor experiencia al usuario <a
+            href="https://www.hesperide.es/cookies.php" class="alert-link" target="_blank">Aprende más</a>
+
+        <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+            Acepto
+        </button>
+    </div>    
+    <!-- END Bootstrap-Cookie-Alert -->
+
+    <!-- Inicio Footer -->
+    <div class='row'>
+
+        <div class="footer text-center py-3">© 2019 Ángel GM: <br>Nuestra página cuenta con las oportunas licencias para
+            operar en España,
+            emitidas por la <b>Dirección General de Ordenacion del Juego</b>.
+            <img src="18.png"
+                    class="img-fluid ml-4" alt="+18">
+            <img src="juego_seguro.png"
+                    class="img-fluid" alt="Juego_Responsable">
+            <a href="https://github.com/wondo1996/DIW_Web_Bingo"><img src="github.png" id="github"
+                    class="img-fluid float-right mr-4 mt-2" alt="GitHub"></a></p>
+        </div>
+
+    </div>
+    <!-- Fin Footer -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+</body>
+
+</html>
